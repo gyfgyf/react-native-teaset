@@ -1,7 +1,7 @@
 # Teaset
 [🇬🇧English version](/README.md)
 
-React Native UI 组件库, 超过 20 个纯 JS(ES6) 组件, 专注于内容展示和操作控制。
+React Native UI 组件库, 超过 20 个纯 JS(ES6) 组件, 专注于内容展示和操作控制。支持typescript
 
 Teaset 设计精巧, 不依赖任何第三方库, 全部源代码不压缩时也只有 300+k, 即使加上图标文件也不足 600k, 如果只需要使用其中的少量组件, 也可以使用按需加载方式只加载需要使用的组件。
 
@@ -9,15 +9,14 @@ Teaset 组件采用 React Native 原生组件同样的风格来编写, 可以与
 
 利用 Teaset, 你可以快速搭建 App 页面框架, 丰富的 UI 组件大大改善页面开发效率, 强大的 Overlay 浮层类把你从繁琐的交互控制中解放出来, 使得你可以专注于业务与逻辑。
 
-
-![](https://github.com/rilyu/teaset/blob/master/screenshots/00-Teaset1.png?raw=true) ![](https://github.com/rilyu/teaset/blob/master/screenshots/00-Teaset2.png?raw=true)
+![](https://github.com/gyfgyf/react-native-teaset/blob/master/teaset/screenshots/00-Teaset1.png?raw=true) ![](https://github.com/gyfgyf/react-native-teaset/blob/master/teaset/screenshots/00-Teaset2.png?raw=true)
 
 # 快速上手
 
 ## 安装
 在你的 React Native App 工程根目录下执行以下命令进行安装:
 ```
-npm install --save teaset
+npm install --save react-native-teaset
 ```
 
 ## Hello world
@@ -49,7 +48,7 @@ import Label from 'teaset/components/Label/Label';
 ## 运行示例程序
 从 github clone teaset 工程(或者下载 zip 文件):
 ```
-git clone https://github.com/rilyu/teaset.git
+git clone https://github.com/gyfgyf/react-native-teaset.git
 cd teaset/example
 npm install
 ```

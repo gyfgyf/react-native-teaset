@@ -1,7 +1,7 @@
 {
   "name": "react-native-teaset",
   "description": "A UI library for react native.",
-  "version": "0.0.1221",
+  "version": "0.0.1223",
   "author": "gyfgyf",
   "license": "MIT",
   "keywords": [
@@ -14,6 +14,10 @@
     "ts",
     "typescript"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gyfgyf/react-native-teaset"
+  },
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",
