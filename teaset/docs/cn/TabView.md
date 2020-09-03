@@ -79,4 +79,4 @@ None.
 
 
 ## Screenshots
-![](https://github.com/rilyu/teaset/blob/master/screenshots/13-TabView.png?raw=true) ![](https://github.com/rilyu/teaset/blob/master/screenshots/13-TabView2.png?raw=true)
+![](https://github.com/gyfgyf/react-native-teaset/blob/master/teaset/screenshots/13-TabView.png?raw=true) ![](https://github.com/gyfgyf/react-native-teaset/blob/master/teaset/screenshots/13-TabView2.png?raw=true)

@@ -114,4 +114,4 @@ Android风格导航条
 
 
 ## Screenshots
-![](https://github.com/rilyu/teaset/blob/master/screenshots/08-NavigationBar.png?raw=true)
+![](https://github.com/gyfgyf/react-native-teaset/blob/master/teaset/screenshots/08-NavigationBar.png?raw=true)

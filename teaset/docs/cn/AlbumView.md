@@ -58,4 +58,4 @@ None.
 ```
 
 ## Screenshots
-![](https://github.com/rilyu/teaset/blob/master/screenshots/14a-AlbumView1.png?raw=true) ![](https://github.com/rilyu/teaset/blob/master/screenshots/14a-AlbumView2.png?raw=true)
+![](https://github.com/gyfgyf/react-native-teaset/blob/master/teaset/screenshots/14a-AlbumView1.png?raw=true) ![](https://github.com/gyfgyf/react-native-teaset/blob/master/teaset/screenshots/14a-AlbumView2.png?raw=true)

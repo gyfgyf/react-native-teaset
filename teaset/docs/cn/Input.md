@@ -61,4 +61,4 @@ None.
 
 
 ## Screenshots
-![](https://github.com/rilyu/teaset/blob/master/screenshots/04-Input.png?raw=true)
+![](https://github.com/gyfgyf/react-native-teaset/blob/master/teaset/screenshots/04-Input.png?raw=true)

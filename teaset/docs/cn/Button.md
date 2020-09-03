@@ -48,4 +48,4 @@ None.
 
 
 ## Screenshots
-![](https://github.com/rilyu/teaset/blob/master/screenshots/02-Button.png?raw=true)
+![](https://github.com/gyfgyf/react-native-teaset/blob/master/teaset/screenshots/02-Button.png?raw=true)

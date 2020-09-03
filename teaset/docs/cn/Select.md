@@ -94,5 +94,5 @@ this.customItems = [
 
 
 ## Screenshots
-![](https://github.com/rilyu/teaset/blob/master/screenshots/05-Select1.png?raw=true) ![](https://github.com/rilyu/teaset/blob/master/screenshots/05-Select2.png?raw=true)
-![](https://github.com/rilyu/teaset/blob/master/screenshots/05-Select3.png?raw=true)
+![](./teaset/blob/screenshots/05-Select1.png?raw=true) ![](https://github.com/gyfgyf/react-native-teaset/blob/master/teaset/screenshots/05-Select2.png?raw=true)
+![](https://github.com/gyfgyf/react-native-teaset/blob/master/teaset/screenshots/05-Select3.png?raw=true)

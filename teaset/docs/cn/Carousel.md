@@ -85,4 +85,4 @@ None.
 
 
 ## Screenshots
-![](https://github.com/rilyu/teaset/blob/master/screenshots/10-Carousel.png?raw=true)
+![](https://github.com/gyfgyf/react-native-teaset/blob/master/teaset/screenshots/10-Carousel.png?raw=true)

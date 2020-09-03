@@ -41,4 +41,4 @@ None.
 ```
 
 ## Screenshots
-![](https://github.com/rilyu/teaset/blob/master/screenshots/14b-Wheel.png?raw=true)
+![](https://github.com/gyfgyf/react-native-teaset/blob/master/teaset/screenshots/14b-Wheel.png?raw=true)

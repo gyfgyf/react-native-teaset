@@ -48,4 +48,4 @@ ActionSheet.show(items, cancelItem);
 
 
 ## Screenshots
-![](https://github.com/rilyu/teaset/blob/master/screenshots/17-ActionSheet.png?raw=true)
+![](https://github.com/gyfgyf/react-native-teaset/blob/master/teaset/screenshots/17-ActionSheet.png?raw=true)

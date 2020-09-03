@@ -40,4 +40,4 @@ drawer.close(); //如需要可代码手动关上抽屉
 ```
 
 ## Screenshots
-![](https://github.com/rilyu/teaset/blob/master/screenshots/20b-Drawer1.png?raw=true) ![](https://github.com/rilyu/teaset/blob/master/screenshots/20b-Drawer2.png?raw=true)
+![](https://github.com/gyfgyf/react-native-teaset/blob/master/teaset/screenshots/20b-Drawer1.png?raw=true) ![](https://github.com/gyfgyf/react-native-teaset/blob/master/teaset/screenshots/20b-Drawer2.png?raw=true)

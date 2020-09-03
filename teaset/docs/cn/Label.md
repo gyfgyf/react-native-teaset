@@ -41,4 +41,4 @@ None.
 ```
 
 ## Screenshots
-![](https://github.com/rilyu/teaset/blob/master/screenshots/01-Label.png?raw=true)
+![](https://github.com/gyfgyf/react-native-teaset/blob/master/teaset/screenshots/01-Label.png?raw=true)

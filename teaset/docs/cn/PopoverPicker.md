@@ -68,4 +68,4 @@ fromView.measureInWindow((x, y, width, height) => {
 
 
 ## Screenshots
-![](https://github.com/rilyu/teaset/blob/master/screenshots/20-PopoverPicker.png?raw=true)
+![](https://github.com/gyfgyf/react-native-teaset/blob/master/teaset/screenshots/19-PullPicker.png?raw=true)

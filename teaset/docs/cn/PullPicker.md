@@ -62,4 +62,4 @@ PullPicker.show(
 
 
 ## Screenshots
-![](https://github.com/rilyu/teaset/blob/master/screenshots/19-PullPicker.png?raw=true)
+![](https://github.com/gyfgyf/react-native-teaset/blob/master/teaset/screenshots/19-PullPicker.png?raw=true)

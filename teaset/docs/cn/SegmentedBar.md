@@ -87,5 +87,5 @@ None.
 ```
 
 ## Screenshots
-![](https://github.com/rilyu/teaset/blob/master/screenshots/11a-SegmentedBar1.png?raw=true) ![](https://github.com/rilyu/teaset/blob/master/screenshots/11a-SegmentedBar2.png?raw=true)
-![](https://github.com/rilyu/teaset/blob/master/screenshots/11a-SegmentedBar3.png?raw=true)
+![](https://github.com/gyfgyf/react-native-teaset/blob/master/teaset/screenshots/11a-SegmentedBar1.png?raw=true) ![](https://github.com/gyfgyf/react-native-teaset/blob/master/teaset/screenshots/11a-SegmentedBar2.png?raw=true)
+![](https://github.com/gyfgyf/react-native-teaset/blob/master/teaset/screenshots/11a-SegmentedBar3.png?raw=true)

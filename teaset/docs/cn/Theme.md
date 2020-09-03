@@ -29,4 +29,5 @@ Theme.set({
 ```
 
 ## Screenshots
-![](https://github.com/rilyu/teaset/blob/master/screenshots/00a-Theme2.png?raw=true) ![](https://github.com/rilyu/teaset/blob/master/screenshots/00a-Theme3.png?raw=true)
+![](https://github.com/gyfgyf/react-native-teaset/blob/master/teaset/screenshots/00a-Theme1.png?raw=true) ![](https://github.com/gyfgyf/react-native-teaset/blob/master/teaset/screenshots/00a-Theme2.png?raw=true)
+![](https://github.com/gyfgyf/react-native-teaset/blob/master/teaset/screenshots/00a-Theme3.png?raw=true)

@@ -30,4 +30,4 @@ ModalIndicator.show(`Modal indicator`);
 
 
 ## Screenshots
-![](https://github.com/rilyu/teaset/blob/master/screenshots/21-ModalIndicator.png?raw=true)
+![](https://github.com/gyfgyf/react-native-teaset/blob/master/teaset/screenshots/21-ModalIndicator.png?raw=true)
