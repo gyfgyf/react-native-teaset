@@ -1,13 +1,13 @@
-# Teaset
+# react-native-teaset
 [🇬🇧English version](/README.md)
 
 React Native UI 组件库, 超过 20 个纯 JS(ES6) 组件, 专注于内容展示和操作控制。支持typescript
 
-Teaset 设计精巧, 不依赖任何第三方库, 全部源代码不压缩时也只有 300+k, 即使加上图标文件也不足 600k, 如果只需要使用其中的少量组件, 也可以使用按需加载方式只加载需要使用的组件。
+react-native-teaset 设计精巧, 不依赖任何第三方库, 全部源代码不压缩时也只有 300+k, 即使加上图标文件也不足 600k, 如果只需要使用其中的少量组件, 也可以使用按需加载方式只加载需要使用的组件。
 
-Teaset 组件采用 React Native 原生组件同样的风格来编写, 可以与 React Native 无缝融合开发, 你不需要太多的学习成本即可掌握。由于使用纯 JS 开发, 因此在 iOS 和 Android 下的表现形式几乎一样。
+react-native-teaset 组件采用 React Native 原生组件同样的风格来编写, 可以与 React Native 无缝融合开发, 你不需要太多的学习成本即可掌握。由于使用纯 JS 开发, 因此在 iOS 和 Android 下的表现形式几乎一样。
 
-利用 Teaset, 你可以快速搭建 App 页面框架, 丰富的 UI 组件大大改善页面开发效率, 强大的 Overlay 浮层类把你从繁琐的交互控制中解放出来, 使得你可以专注于业务与逻辑。
+利用 react-native-teaset, 你可以快速搭建 App 页面框架, 丰富的 UI 组件大大改善页面开发效率, 强大的 Overlay 浮层类把你从繁琐的交互控制中解放出来, 使得你可以专注于业务与逻辑。
 
 ![](https://github.com/gyfgyf/react-native-teaset/blob/master/teaset/screenshots/00-Teaset1.png?raw=true) ![](https://github.com/gyfgyf/react-native-teaset/blob/master/teaset/screenshots/00-Teaset2.png?raw=true)
 
@@ -20,12 +20,12 @@ npm install --save react-native-teaset
 ```
 
 ## Hello world
-从 teaset 包中 import 组件即可使用
+从 react-native-teaset 包中 import 组件即可使用
 ```
 import React, {Component} from 'react';
 import {View, AppRegistry} from 'react-native';
 
-import {Label} from 'teaset';
+import {Label} from 'react-native-teaset';
 
 class HelloWorldApp extends Component {
   render() {
@@ -42,14 +42,13 @@ AppRegistry.registerComponent('HelloWorldApp', () => HelloWorldApp);
 ## 按需加载
 使用单独 import 组件实现按需加载
 ```
-import Label from 'teaset/components/Label/Label';
+import { Label }from 'react-native-teaset';
 ```
 
 ## 运行示例程序
-从 github clone teaset 工程(或者下载 zip 文件):
+从 github clone react-native-teaset 工程(或者下载 zip 文件):
 ```
 git clone https://github.com/gyfgyf/react-native-teaset.git
-cd teaset/example
 npm install
 ```
 在 iOS 下运行:
@@ -74,13 +73,13 @@ react-native run-android
 如果你使用了 Redux ，需要使用 ```<TopView>``` 包裹 container ，用于给 Overlay 类型的组件提供容器(感谢 [@Alexorz](https://github.com/Alexorz) 的贡献)。
 
 ```
-import { TopView } from 'teaset';
+import { TopView } from 'react-native-teaset';
 
 container => () => <Provider store={store}><TopView>{container}</TopView></Provider>
 ```
 
 # 文档
-中文文档已编写完成, 暂时没时间编写英文文档, 如果你乐意为 Teaset 贡献力量, 欢迎 PR。
+中文文档已编写完成, 暂时没时间编写英文文档, 如果你乐意为 react-native-teaset 贡献力量, 欢迎 PR。
 
 ## 主题
 [`{Theme}` 主题](./Theme.md)
