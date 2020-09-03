@@ -34,7 +34,7 @@ If SafeAreaView is used, please use ```Theme.set({fitIPhoneX: false})``` to manu
 If you use Redux, you need to use the ```<TopView>``` package container (thanks [@Alexorz](https://github.com/Alexorz) ).
 
 ```
-import { TopView } from 'teaset';
+import { TopView } from 'react-native-teaset';
 
 container => () => <Provider store={store}><TopView>{container}</TopView></Provider>
 ```
