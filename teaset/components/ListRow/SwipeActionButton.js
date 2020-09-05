@@ -13,7 +13,7 @@ export default class SwipeActionButton extends Component {
   static propTypes = {
     type: PropTypes.oneOf(['default', 'danger']),
     title: PropTypes.oneOfType([PropTypes.element, PropTypes.string, PropTypes.number]),
-    titleStyle: Text.propTypes.style,
+    // titleStyle: Text.propTypes.style,
   };
 
   static defaultProps = {

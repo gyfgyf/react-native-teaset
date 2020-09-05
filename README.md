@@ -6,6 +6,7 @@ A UI library for react native, provides 20+ pure JS(ES6)+typescript components, 
 # Installation
 ```
 npm install --save react-native-teaset
+npm install --save react-native-legacy-components
 ```
 
 # Example

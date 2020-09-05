@@ -12,8 +12,6 @@ import Popover from '../Popover/Popover';
 export default class OverlayPopoverView extends OverlayView {
 
   static propTypes = {
-    // ...OverlayView.propTypes,
-    // popoverStyle: Popover.propTypes.style,
     fromBounds: PropTypes.shape({
       x: PropTypes.number.isRequired,
       y: PropTypes.number.isRequired,

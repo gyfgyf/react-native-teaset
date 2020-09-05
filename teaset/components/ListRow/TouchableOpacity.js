@@ -16,7 +16,7 @@ export default class TouchableOpacity extends Component {
   static propTypes = {
     ...TouchableWithoutFeedback.propTypes,
     activeOpacity: PropTypes.number,
-    style: ViewPropTypes.style,
+    // style: ViewPropTypes.style,
   };
 
   static defaultProps = {

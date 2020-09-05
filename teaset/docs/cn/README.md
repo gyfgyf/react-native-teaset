@@ -17,6 +17,7 @@ react-native-teaset 组件采用 React Native 原生组件同样的风格来编�
 在你的 React Native App 工程根目录下执行以下命令进行安装:
 ```
 npm install --save react-native-teaset
+npm install --save react-native-legacy-components
 ```
 
 ## Hello world

@@ -14,8 +14,8 @@ export default class SegmentedItem extends Component {
   static propTypes = {
     ...ViewPropTypes,
     title: PropTypes.oneOfType([PropTypes.element, PropTypes.string, PropTypes.number]),
-    titleStyle: Text.propTypes.style,
-    activeTitleStyle: Text.propTypes.style,
+    // titleStyle: Text.propTypes.style,
+    // activeTitleStyle: Text.propTypes.style,
     active: PropTypes.bool,
     badge: PropTypes.oneOfType([PropTypes.element, PropTypes.string, PropTypes.number]),
     onAddWidth: PropTypes.func, //(width)

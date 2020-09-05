@@ -25,7 +25,7 @@ export default class OverlayPullView extends OverlayView {
   static propTypes = {
     // ...OverlayView.propTypes,
     side: PropTypes.oneOf(['top', 'bottom', 'left', 'right']),
-    containerStyle: ViewPropTypes.style,
+    // containerStyle: ViewPropTypes.style,
     rootTransform: PropTypes.oneOfType([
       PropTypes.oneOf(['none', 'translate', 'scale']),
       PropTypes.arrayOf(PropTypes.shape({
