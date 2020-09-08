@@ -252,6 +252,7 @@ export default class ListRow extends Component<ListRowProps,ListRowState> {
       onPress,
       ...others
     } = this.props;
+    const swipeable = swipeActions instanceof Array && swipeActions.length > 0;
     return (
       <View onLayout={onLayout}>
         {this.renderSeparator(topSeparator)}
@@ -260,7 +261,7 @@ export default class ListRow extends Component<ListRowProps,ListRowState> {
           {...others}
           style={this.buildStyle()}
           activeOpacity={(!activeOpacity && activeOpacity !== 0) ? (onPress ? 0.2 : 1) : activeOpacity}
-          swipeable={swipeActions instanceof Array && swipeActions.length > 0}
+          swipeable={swipeable}
           swipeWidth={this.state.swipeWidth}
           onPress={onPress}
           onSwipeStsChange={(swipeSts:string) => this.setState({swipeSts})}
