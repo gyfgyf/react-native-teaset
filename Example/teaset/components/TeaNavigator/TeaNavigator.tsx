@@ -2,18 +2,22 @@
 
 'use strict';
 
-import React, {Component} from 'react';
+import React, {Component, ReactNode} from 'react';
 import PropTypes from 'prop-types';
 import {View, Text} from 'react-native';
 
 import TeaNavigatorScene from './TeaNavigatorScene';
 
-import {Navigator} from 'react-native-legacy-components';
+import { Navigator } from 'react-native-legacy-components';
+
+import {setNavigator} from '../../util/navigatorServer'
 //replace NavigatorScene, optimize the effect of the scene
 Navigator.SceneConfigs = TeaNavigatorScene;
 
-export default class TeaNavigator extends Component {
-
+interface TeaNavigatorProps{
+  rootView: ReactNode;
+}
+export default class TeaNavigator extends Component<TeaNavigatorProps> {
   static propTypes = {
     rootView: PropTypes.element,
   };
@@ -35,40 +39,36 @@ export default class TeaNavigator extends Component {
   };
 
   static SceneConfigs = TeaNavigatorScene;
-
-  static childContextTypes = {
-    navigator: PropTypes.func,
-  };
-
-  getChildContext() {
-    return {navigator: () => this.navigator};
+  private navigator: any;
+  getRef = (ref:any) => {
+    this.navigator = ref;
+    setNavigator(ref);
   }
-
   render() {
-    let {rootView} = this.props;
+    const {rootView} = this.props;
     return (
       <View style={{flex: 1, backgroundColor: 'black'}}>
         <Navigator
           initialRoute={{
             view: rootView, //the view element, like <View />
             scene: null, //navigate scene, null able
+           
           }}
-          configureScene={route => {
+          configureScene={(route:any) => {
             if (route.scene) return route.scene;
             else if (route.view.props.scene) return route.view.props.scene;
             else return TeaNavigatorScene.PushFromRight;
           }}
-          renderScene={(route, navigator) => {
-            return React.cloneElement(route.view, {ref: v => route.viewRef = v});
+          renderScene={(route:any, navigator:any) => {
+            return React.cloneElement(route.view, {ref: (v:any) => route.viewRef = v});
           }}
-          onDidFocus={route => {
+          onDidFocus={(route:any) => {
             route.viewRef && route.viewRef.onDidFocus && route.viewRef.onDidFocus();
           }}
-          onWillFocus={route => {
+          onWillFocus={(route:any) => {
             route.viewRef && route.viewRef.onWillFocus && route.viewRef.onWillFocus();
           }}
-          sceneStyle={null}
-          ref={v => this.navigator = v}
+          ref={this.getRef}
         />
       </View>
     );

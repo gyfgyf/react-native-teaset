@@ -8,10 +8,10 @@ import {Dimensions, PixelRatio} from 'react-native';
 import NavigatorSceneConfigs from 'react-native-legacy-components/src/NavigatorSceneConfigs.js';
 import buildStyleInterpolator from 'react-native-legacy-components/src/buildStyleInterpolator';
 
-var SCREEN_WIDTH = Dimensions.get('window').width;
-var SCREEN_HEIGHT = Dimensions.get('window').height;
+const SCREEN_WIDTH = Dimensions.get('window').width;
+const SCREEN_HEIGHT = Dimensions.get('window').height;
 
-var FadeToTheLeft = {
+const FadeToTheLeft = {
   // Rotate *requires* you to break out each individual component of
   // rotation (x, y, z, w)
   transformTranslate: {
@@ -78,7 +78,7 @@ var FadeToTheLeft = {
   },
 };
 
-var FadeToTheRight = {
+const FadeToTheRight = {
   ...FadeToTheLeft,
   transformTranslate: {
     from: {x: 0, y: 0, z: 0},
@@ -90,7 +90,7 @@ var FadeToTheRight = {
   }
 };
 
-var FadeIn = {
+const FadeIn = {
   opacity: {
     from: 0,
     to: 1,
@@ -102,7 +102,7 @@ var FadeIn = {
   },
 };
 
-var FadeOut = {
+const FadeOut = {
   opacity: {
     from: 1,
     to: 0,
@@ -114,7 +114,7 @@ var FadeOut = {
   },
 };
 
-var ToTheLeft = {
+const ToTheLeft = {
   transformTranslate: {
     from: {x: 0, y: 0, z: 0},
     to: {x: -Dimensions.get('window').width, y: 0, z: 0},
@@ -140,7 +140,7 @@ var ToTheLeft = {
   },
 };
 
-var ToTheUp = {
+const ToTheUp = {
   transformTranslate: {
     from: {x: 0, y: 0, z: 0},
     to: {x: 0, y: -Dimensions.get('window').height, z: 0},
@@ -165,7 +165,7 @@ var ToTheUp = {
   },
 };
 
-var ToTheDown = {
+const ToTheDown = {
   transformTranslate: {
     from: {x: 0, y: 0, z: 0},
     to: {x: 0, y: Dimensions.get('window').height, z: 0},
@@ -190,7 +190,7 @@ var ToTheDown = {
   },
 };
 
-var FromTheRight = {
+const FromTheRight = {
   opacity: {
     value: 1.0,
     type: 'constant',
@@ -226,7 +226,7 @@ var FromTheRight = {
   },
 };
 
-var FromTheLeft = {
+const FromTheLeft = {
   ...FromTheRight,
   transformTranslate: {
     from: {x: -SCREEN_WIDTH, y: 0, z: 0},
@@ -248,7 +248,7 @@ var FromTheLeft = {
   },
 };
 
-var FromTheDown = {
+const FromTheDown = {
   ...FromTheRight,
   transformTranslate: {
     from: {y: SCREEN_HEIGHT, x: 0, z: 0},
@@ -270,7 +270,7 @@ var FromTheDown = {
   },
 };
 
-var FromTheTop = {
+const FromTheTop = {
   ...FromTheRight,
   transformTranslate: {
     from: {y: -SCREEN_HEIGHT, x: 0, z: 0},
@@ -296,7 +296,7 @@ var FromTheTop = {
   },
 };
 
-var ToTheBack = {
+const ToTheBack = {
   // Rotate *requires* you to break out each individual component of
   // rotation (x, y, z, w)
   transformTranslate: {
@@ -343,7 +343,7 @@ var ToTheBack = {
   },
 };
 
-var ToTheBackConstant = {
+const ToTheBackConstant = {
   opacity: {
     from: 1,
     to: 0.6,
@@ -355,7 +355,7 @@ var ToTheBackConstant = {
   },
 };
 
-var FromTheFront = {
+const FromTheFront = {
   opacity: {
     value: 1.0,
     type: 'constant',
@@ -389,14 +389,14 @@ var FromTheFront = {
   },
 };
 
-var ToTheBackAndroid = {
+const ToTheBackAndroid = {
   opacity: {
     value: 1,
     type: 'constant',
   },
 };
 
-var FromTheFrontAndroid = {
+const FromTheFrontAndroid = {
   opacity: {
     from: 0,
     to: 1,
@@ -426,7 +426,7 @@ var FromTheFrontAndroid = {
   },
 };
 
-var ReplaceIn = {
+const ReplaceIn = {
   opacity: {
     from: 0,
     to: 1,
@@ -438,7 +438,7 @@ var ReplaceIn = {
   },
 };
 
-var ReplaceOut = {
+const ReplaceOut = {
   opacity: {
     from: 1,
     to: 0,
@@ -450,12 +450,12 @@ var ReplaceOut = {
   },
 };
 
-var BaseOverswipeConfig = {
+const BaseOverswipeConfig = {
   frictionConstant: 1,
   frictionByDistance: 1.5,
 };
 
-var BaseLeftToRightGesture = {
+const BaseLeftToRightGesture = {
 
   // If the gesture can end and restart during one continuous touch
   isDetachable: false,
@@ -484,24 +484,24 @@ var BaseLeftToRightGesture = {
 
 };
 
-var BaseRightToLeftGesture = {
+const BaseRightToLeftGesture = {
   ...BaseLeftToRightGesture,
   direction: 'right-to-left',
 };
 
-var BaseDownUpGesture = {
+const BaseDownUpGesture = {
   ...BaseLeftToRightGesture,
   fullDistance: SCREEN_HEIGHT,
   direction: 'down-to-up',
 };
 
-var BaseUpDownGesture = {
+const BaseUpDownGesture = {
   ...BaseLeftToRightGesture,
   fullDistance: SCREEN_HEIGHT,
   direction: 'up-to-down',
 };
 
-var BaseConfig = {
+const BaseConfig = {
   // A list of all gestures that are enabled on this scene
   gestures: {
     pop: BaseLeftToRightGesture,
@@ -521,7 +521,7 @@ var BaseConfig = {
   },
 };
 
-var TeaNavigatorScene = {
+const TeaNavigatorScene = {
   
   ...NavigatorSceneConfigs,
 
@@ -575,5 +575,5 @@ var TeaNavigatorScene = {
   // VerticalDownSwipeJump
 };
 
-module.exports = TeaNavigatorScene;
+export default TeaNavigatorScene;
 

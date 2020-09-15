@@ -37,4 +37,7 @@ export { default as BasePage }  from './components/BasePage/BasePage';
 export { default as NavigationPage }  from './components/NavigationPage/NavigationPage';
 
 export { default as KeyboardSpace }  from './components/KeyboardSpace/KeyboardSpace';
+export { default as ConfigProvider } from './components/config-provider/';
 
+//util
+export { default as setTheme } from './util/setTheme';

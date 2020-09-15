@@ -1,5 +1,5 @@
 # Teaset
-[🇨🇳中文完整文档版](./docs/cn/README.md)
+[🇨🇳中文完整文档版](https://github.com/gyfgyf/react-native-teaset/blob/master/docs/cn/README.md)
 
 A UI library for react native, provides 20+ pure JS(ES6)+typescript components, focusing on content display and action control.
 
@@ -13,6 +13,7 @@ npm install --save react-native-legacy-components
 Clone teaset project from github (or download zip file):
 ```
 git clone https://github.com/gyfgyf/react-native-teaset.git
+cd Example
 npm install
 ```
 To run example on iOS:
@@ -38,6 +39,24 @@ If you use Redux, you need to use the ```<TopView>``` package container (thanks 
 import { TopView } from 'react-native-teaset';
 
 container => () => <Provider store={store}><TopView>{container}</TopView></Provider>
+```
+## change theme 
+if you use TeaNavigator change theme use can or setTheme
+```
+  // Theme.set(item);
+  // this.navigator.popToTop();
+```
+if you use react-navigation change theme,You have to add a BasePage for each page
+```
+ import {setTheme,BasePage,Button,ConfigProvider} from 'react-native-teaset';
+ setTheme(theme:string);
+  <ConfigProvider> //add to root view
+    <BasePage>
+      <Button/>
+    </BasePage>
+  </ConfigProvider>
+ 
+
 ```
 
 # Documentation

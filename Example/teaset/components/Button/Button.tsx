@@ -8,9 +8,10 @@ import {
   TouchableOpacity,
   ViewStyle,
   TextStyle,
+  View,
 } from 'react-native';
 import Theme from '../../themes/Theme';
-
+import { Consumer} from '../../components/config-provider/context';
 interface ButtonProps {
   type: 'default' | 'primary' | 'secondary' | 'danger' | 'link';
   size?: 'xl' | 'lg' | 'md' | 'sm' | 'xs';

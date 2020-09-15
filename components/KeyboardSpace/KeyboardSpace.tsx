@@ -4,36 +4,39 @@
 'use strict';
 
 import React, {Component} from 'react';
-import PropTypes from 'prop-types';
-import {StyleSheet, Platform, View, Keyboard, LayoutAnimation} from 'react-native';
+import {StyleSheet, Platform,KeyboardEventName, View, Keyboard, LayoutAnimation} from 'react-native';
 
-export default class KeyboardSpace extends Component {
-
-  static propTypes = {
-    topInsets: PropTypes.number,
-  };
-
+interface KeyboardSpaceProps{
+  topInsets: number;
+}
+interface keyboardHeightState{
+  keyboardHeight: number;
+}
+export default class KeyboardSpace extends Component<KeyboardSpaceProps,keyboardHeightState> {
   static defaultProps = {
     topInsets: 0,
   };
-
-  constructor(props) {
+  private showListener: any;
+  private hideListener: any;
+  constructor(props:KeyboardSpaceProps) {
     super(props);
     this.showListener = null;
     this.hideListener = null;
     this.state = {
       keyboardHeight: 0,
     };
+    this.onKeyboardShow = this.onKeyboardShow.bind(this);
+    this.onKeyboardHide = this.onKeyboardHide.bind(this);
   }
 
   componentDidMount() {
     if (!this.showListener) {
-      let name = Platform.OS === 'ios' ? 'keyboardWillShow' : 'keyboardDidShow';
-      this.showListener = Keyboard.addListener(name, e => this.onKeyboardShow(e));
+      let name:KeyboardEventName = Platform.OS === 'ios' ? 'keyboardWillShow' : 'keyboardDidShow';
+      this.showListener = Keyboard.addListener((name), this.onKeyboardShow);
     }
     if (!this.hideListener) {
-      let name = Platform.OS === 'ios' ? 'keyboardWillHide' : 'keyboardDidHide';
-      this.hideListener = Keyboard.addListener(name, () => this.onKeyboardHide());
+      let name:KeyboardEventName = Platform.OS === 'ios' ? 'keyboardWillHide' : 'keyboardDidHide';
+      this.hideListener = Keyboard.addListener(name,this.onKeyboardHide);
     }
   }
 
@@ -48,7 +51,7 @@ export default class KeyboardSpace extends Component {
     }
   }
 
-  componentDidUpdate(prevProps, prevState) {
+  componentDidUpdate(prevProps:KeyboardSpaceProps, prevState:keyboardHeightState) {
     if (prevState.keyboardHeight !== this.state.keyboardHeight) {
       LayoutAnimation.configureNext({
         duration: 500,
@@ -65,7 +68,7 @@ export default class KeyboardSpace extends Component {
     }
   }
 
-  onKeyboardShow(e) {
+  onKeyboardShow(e:any) {
     if (!e || !e.endCoordinates || !e.endCoordinates.height) return;
     let height = e.endCoordinates.height + (this.props.topInsets ? this.props.topInsets : 0);
     this.setState({keyboardHeight: height});

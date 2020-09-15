@@ -73,8 +73,7 @@ export default class ListRow extends Component<ListRowProps,ListRowState> {
 
   buildStyle() {
     const {style} = this.props;
-    const styles = StyleSheet.create({
-      container: {
+    const styles:ViewStyle = {
         backgroundColor: Theme.rowColor,
         paddingLeft: Theme.rowPaddingLeft,
         paddingRight: Theme.rowPaddingRight,
@@ -85,9 +84,8 @@ export default class ListRow extends Component<ListRowProps,ListRowState> {
         flexDirection: 'row',
         alignItems: 'center',
         ...style,
-      }
-    })
-    return styles.container;
+    }
+    return styles;
   }
 
   renderSeparator(type:ReactElement | 'none' | 'full' | 'indent') {
